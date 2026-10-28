@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Penalty Master 3D | Ultimate Edition</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="hud"><header id="top"><div class="brand"><span class="brand-mark">⚽</span><span>PENALTY <em>MASTER</em><small>ULTIMATE EDITION</small></span></div><div id="score">GOLS 0 · CHUTES 0/5</div></header>
+<div id="mode">🏆 PÊNALTIS CLÁSSICOS</div><div id="aim">⊕</div><div id="message"></div>
+<div id="bottom"><div class="meter-header"><span>⚡ POTÊNCIA DO CHUTE</span><span>SEGURE PARA CARREGAR</span></div><div id="power"><div id="fill"></div></div><div id="hint">MOUSE / SETAS — MIRAR &nbsp; • &nbsp; ESPAÇO / CLIQUE — CHUTAR &nbsp; • &nbsp; R — REINICIAR</div></div></div>
+<div id="overlay"><div class="menu-glow"></div><main id="panel"><div class="eyebrow">★ A EXPERIÊNCIA DEFINITIVA DE PÊNALTIS ★</div><h1>PENALTY <span>MASTER</span><strong>3D</strong></h1><p class="subtitle">ULTIMATE EDITION <span class="separator">/</span> ENTRE EM CAMPO</p>
+<div class="divider"></div><h2>ESCOLHA SUA DIFICULDADE</h2><div class="cards" id="difficultyCards">
+<button class="choice" data-difficulty="easy" type="button"><span class="choice-icon">🟢</span><b>INICIANTE</b><small>Mais tempo para acertar</small><span class="stars">★☆☆</span></button>
+<button class="choice selected" data-difficulty="normal" type="button"><span class="choice-icon">⚡</span><b>PROFISSIONAL</b><small>Desafio equilibrado</small><span class="stars">★★☆</span></button>
+<button class="choice" data-difficulty="hard" type="button"><span class="choice-icon">🏆</span><b>LENDÁRIO</b><small>Goleiro mais difícil</small><span class="stars">★★★</span></button>
+</div><h2>SELECIONE O MODO</h2><div class="modes"><button class="mode-choice selected" data-gamemode="classic" type="button">⚽ 5 PÊNALTIS</button><button class="mode-choice" data-gamemode="precision" type="button">🎯 PRECISÃO</button><button class="mode-choice" data-gamemode="cup" type="button">🏆 CAMPEONATO</button></div>
+<div class="native-selects"><label>Dificuldade <select id="difficulty"><option value="easy">Iniciante</option><option value="normal" selected>Profissional</option><option value="hard">Lendário</option></select></label><label>Modo <select id="gameMode"><option value="classic">5 Pênaltis</option><option value="precision">Desafio de Precisão</option><option value="cup">Copa - 3 Rodadas</option></select></label></div>
+<button id="start" disabled>PREPARANDO...</button><p id="status" aria-live="polite">Carregando motor 3D...</p><div class="footnote">🎯 MIRE COM O MOUSE OU SETAS &nbsp;·&nbsp; SEGURE ESPAÇO E SOLTE PARA CHUTAR</div></main></div><div id="loading"></div>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"}}</script><script type="module" src="game.js"></script></body></html>
